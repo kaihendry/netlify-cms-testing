@@ -1,2 +1,3 @@
 baseURL: https://cms-foobar.netlify.app/
 title: Netlify CMS FTW
+relativeURLs: true

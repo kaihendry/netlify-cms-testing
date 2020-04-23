@@ -5,6 +5,4 @@ description: First!
 ---
 First blog on the CMS. =)
 
-
-
-Another post.
+I just edited my first post.

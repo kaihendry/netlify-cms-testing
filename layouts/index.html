@@ -1,9 +1,7 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-
-  <p>Goal: Static site, git backed, with a User Interface (CMS) for
+  <h4>Goal: Static site, git backed, with a User Interface (CMS) for
   non-technical (non-git) users to edit content.  There should also be a
-  lightweight review process aka "Editorial Workflow".</p>
+  lightweight review process aka "Editorial Workflow".</h4>
 
   <ul>
     {{ range (where .Site.RegularPages "Section" "blog") }}
@@ -14,12 +12,15 @@
   <p><a href="/admin">Administer via Netlify CMS</a></p>
   <p><a href="https://github.com/kaihendry/netlify-cms-testing">Source of this CMS experiment</a></p>
 
-  <h2>Community forum posts</h2>
-
+  <h2>Community forum</h2>
   <ul>
-	  <li><a href="https://community.netlify.com/t/hugo-instructions-need-updating/12851">Netlify CMS: Hugo instructions need updating</a></li>
-	  <li><a href="https://discourse.gohugo.io/t/relativeurls-is-not-working/24969">Hugo: relativeURLs is not working</a></li>
-	  <li><a href="https://community.netlify.com/t/image-resize-for-hugo/13166">Hugo: Image processing in Hugo via a CMS</a></li>
-	  <li><a href="https://github.com/budparr/gohugo-theme-ananke/issues/269">Translations in a theme</a></li>
+	  <li><a href="https://community.netlify.com/u/kaihendry/activity">Netlify's Discourse</a></li>
+	  <li><a href="https://discourse.gohugo.io/u/hendry/activity">Hugo's Discourse</a></li>
   </ul>
+
+  <h2>Image uploads</h2>
+
+  <p>CMS with Hugo <a
+	  href="https://discourse.gohugo.io/t/cms-image-upload-directory/24977/2">cannot
+	  resize images</a>, so it shouldn't be used.</p>
 {{ end }}

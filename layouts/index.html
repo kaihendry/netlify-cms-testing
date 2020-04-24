@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="robots" content="noindex">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="/style.css">
-<title>{{ .Title }}</title>
-</head>
-<body>
+{{ define "main" }}
   <h1>{{ .Title }}</h1>
 
   <p>Goal: Static site, git backed, with a User Interface (CMS) for
@@ -28,8 +19,7 @@
   <ul>
 	  <li><a href="https://community.netlify.com/t/hugo-instructions-need-updating/12851">Netlify CMS: Hugo instructions need updating</a></li>
 	  <li><a href="https://discourse.gohugo.io/t/relativeurls-is-not-working/24969">Hugo: relativeURLs is not working</a></li>
-	  <li><a href="https://community.netlify.com/t/image-resize-for-hugo/13166">Image processing in Hugo via a CMS</a></li>
+	  <li><a href="https://community.netlify.com/t/image-resize-for-hugo/13166">Hugo: Image processing in Hugo via a CMS</a></li>
+	  <li><a href="https://github.com/budparr/gohugo-theme-ananke/issues/269">Translations in a theme</a></li>
   </ul>
-
-</body>
-</html>
+{{ end }}

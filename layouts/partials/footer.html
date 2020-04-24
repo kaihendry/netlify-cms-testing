@@ -1,0 +1,7 @@
+<footer>
+{{ $editURL := printf "%s/edit/master/content/%s" "https://github.com/kaihendry/netlify-cms-testing" .Path }}
+{{ $commitsURL := printf "%s/commits/master/content/%s" "https://github.com/kaihendry/netlify-cms-testing" .Path }}
+<a href="{{ $editURL }}">Edit this</a>
+|
+<a href="{{ $commitsURL }}">File history</a>
+</footer>

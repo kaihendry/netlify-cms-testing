@@ -5,3 +5,5 @@ body {
   padding: 2ch;
   margin: auto;
 }
+
+img { max-width: 100%; height: auto; }

@@ -5,14 +5,23 @@
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="/style.css">
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <title>{{ .Title }}</title>
 </head>
 <body>
+  <h1>{{ .Title }}</h1>
+
+  <p>Goal: Static site, git backed, with a User Interface (CMS) for
+  non-technical (non-git) users to edit content.  There should also be a
+  lightweight review process aka "Editorial Workflow".</p>
+
   <ul>
     {{ range (where .Site.RegularPages "Section" "blog") }}
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>
+
+  <p><a href="/admin">Administer via Netlify CMS</a></p>
+  <p><a href="https://github.com/kaihendry/netlify-cms-testing">Source of this CMS experiment</a></p>
+
 </body>
 </html>

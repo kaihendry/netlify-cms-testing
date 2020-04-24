@@ -8,3 +8,5 @@ Let's go! Changed.
 Iterate!
 
 ![WFH](/img/img_1335.jpg "Wife and I working from home")
+
+Any better?

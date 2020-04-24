@@ -2,22 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
+<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<title>Document</title>
+<title>Netlify CMS testing</title>
 </head>
-
 <body>
-  <h1>Nice. It's looking good already.</h1>
   <ul>
     {{ range (where .Site.RegularPages "Section" "blog") }}
-    <li>
-      <a href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-    </li>
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>
 </body>
-
 </html>

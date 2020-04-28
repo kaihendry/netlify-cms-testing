@@ -8,7 +8,17 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+<!-- https://community.netlify.com/t/image-resize-for-hugo/13166/5?u=kaihendry -->
+<script>
+window.CMS_MANUAL_INIT = true;
+</script>
+<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+<script>
+CMS.registerMediaLibrary({
+name: 'disabled',
+init: () => ({ show: () => undefined, enableStandalone: () => false }),
+});
+CMS.init();
+</script>
   </body>
 </html>

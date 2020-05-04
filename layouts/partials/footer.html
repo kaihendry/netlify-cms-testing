@@ -2,6 +2,17 @@
 
 <hr>
 
+{{ if .IsTranslated }}
+<h4>{{ i18n "translations" }}</h4>
+<ul>
+{{ range .Translations }}
+<li>
+<a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+</li>
+{{ end }}
+</ul>
+{{ end }}
+
 {{ if .File }}
 {{ $editURL := printf "%s/edit/master/content/%s" "https://github.com/kaihendry/netlify-cms-testing" .Path }}
 {{ $commitsURL := printf "%s/commits/master/content/%s" "https://github.com/kaihendry/netlify-cms-testing" .Path }}

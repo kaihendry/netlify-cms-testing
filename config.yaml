@@ -3,20 +3,8 @@ title: Netlify CMS FTW
 languages:
   en:
     languageName: English
-    weight: 1
-    menu:
-      main:
-        - url: /about/
-          name: About
-          weight: 1
   fr:
     languageName: French
-    weight: 2
-    menu:
-      main:
-        - url: /fr/about/
-          name: A propos
-          weight: 1
 
 disableKinds:
   - RSS

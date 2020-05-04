@@ -1,6 +1,7 @@
 ---
 title: About page
 description: About this site
+menu: main
 ---
 
 

@@ -5,8 +5,8 @@ media_folder: static/img
 public_folder: /img
 publish_mode: editorial_workflow
 collections:
-  - name: 'blog'
-    label: 'Blog'
+  - name: blog
+    label: Blog
     folder: 'content/blog'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -17,9 +17,12 @@ collections:
       - {label: 'Publish Date', name: 'date', widget: 'datetime'}
       - {label: 'Description', name: 'description', widget: 'string'}
       - {label: 'Body', name: 'body', widget: 'markdown'}
-  - file: "site/content/contact-us.md"
-    label: "Contact Us page"
-    name: "contact"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Description, name: description, widget: string}
+  - name: pages
+    label: Pages
+    files:
+      - file: "site/content/contact-us.md"
+        label: "Contact Us page"
+        name: "contact"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: string}

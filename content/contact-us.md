@@ -6,4 +6,5 @@ menu: main
 
 # Say hello
 
-<a href="mailto:kai.hendry+cms@gmail.com">Email</a>
+
+Omg, I think this works.

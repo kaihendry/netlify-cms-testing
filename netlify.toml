@@ -1,2 +1,9 @@
 [build.environment]
-HUGO_VERSION = "0.69.1"
+HUGO_VERSION = "0.70.0"
+
+[[redirects]]
+from = "/"
+to = "/fr/"
+status = 302
+force = true
+conditions = {Language = ["fr"]}
